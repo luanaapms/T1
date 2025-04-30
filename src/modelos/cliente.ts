@@ -31,6 +31,9 @@ export default class Cliente {
     public get getGenero(): Genero {
         return this.genero
     }
+    public set setGenero(novoGenero: Genero) {
+        this.genero = novoGenero;
+    }
     public get getCpf(): CPF {
         return this.cpf
     }

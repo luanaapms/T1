@@ -2,24 +2,24 @@ import Entrada from "../io/entrada";
 import Cadastro from "./cadastro";
 import Servico from "../modelos/servico";
 
-export default class CadastroServiço extends Cadastro{
-    private serviços: Array<Servico>
+export default class CadastroServico extends Cadastro{
+    private servicos: Array<Servico>
     private entrada: Entrada
-    constructor(serviços: Array<Servico>){
+    constructor(servicos: Array<Servico>){
         super()
-        this.serviços = serviços
+        this.servicos = servicos
         this.entrada = new Entrada()
     
     }
     public cadastrar(): void {
         console.log(`\nInicio do cadastro de um novo serviço`)
 
-        let idServiço = this.entrada.receberTexto(`Digite o ID do novo serviço: `)
-        let nomeServiço = this.entrada.receberTexto(`Digite o nome do serviço: `)
-        let precoServiço = this.entrada.receberNumero(`Informe o valor do serviço: `)
+        let idServico = this.entrada.receberTexto(`Digite o ID do novo serviço: `)
+        let nomeServico = this.entrada.receberTexto(`Digite o nome do serviço: `)
+        let precoServico = this.entrada.receberNumero(`Informe o valor do serviço: `)
 
-        let serviço = new Servico(idServiço, nomeServiço, precoServiço)
-        this.serviços.push(serviço)
+        let servico = new Servico(idServico, nomeServico, precoServico)
+        this.servicos.push(servico)
         
         console.log(`\nCadastro concluído :)\n`);
     }

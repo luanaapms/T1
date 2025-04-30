@@ -5,9 +5,9 @@ export default class Servico {
     vendas: number
 
     constructor(id: string, nome: string, preco: number) {
+        this.id = id
         this.nome = nome
         this.preco = preco
-        this.id = id
         this.vendas = 0
     }
 
