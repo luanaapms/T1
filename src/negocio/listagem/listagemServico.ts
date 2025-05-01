@@ -1,4 +1,4 @@
-import Servico from "../modelos/servico";
+import Servico from "../../modelos/servico";
 import Listagem from "./listagem";
 
 export default class ListagemServico extends Listagem{

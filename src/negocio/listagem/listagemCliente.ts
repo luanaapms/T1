@@ -1,4 +1,4 @@
-import Cliente from "../modelos/cliente";
+import Cliente from "../../modelos/cliente";
 import Listagem from "./listagem";
 
 export default class ListagemClientes extends Listagem {
