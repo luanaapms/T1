@@ -2,7 +2,7 @@ import Cliente from "../../modelos/cliente";
 import Listagem from "./listagem";
 import Entrada from "../../io/entrada";
 
-export default class ListagemClienteGenero extends Listagem {
+export default class ListagemGeral extends Listagem {
     private clientes: Array<Cliente>
     private entrada: Entrada
 
@@ -25,6 +25,7 @@ export default class ListagemClienteGenero extends Listagem {
             entradas.forEach(([nome, quantidade], index) => {
                 console.log(`${index + 1}º ${nome}`);
                 console.log(`Consumo: ${quantidade}\n`);
+                console.log(`--------------------------------------`);
             });
         };
     

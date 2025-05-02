@@ -35,6 +35,7 @@ export default class ListagemMaiorValor extends Listagem {
             console.log(`   Valor em produtos: R$ ${totalProdutos.toFixed(2)}`)
             console.log(`   Valor em serviços: R$ ${totalServicos.toFixed(2)}`)
             console.log(`   Total de valor: R$ ${total.toFixed(2)}\n`)
+            console.log(`--------------------------------------`);
         })
     }
 }

@@ -12,7 +12,9 @@ export default class ListagemClienteGenero extends Listagem {
         this.entrada = new Entrada()
     }
 
-    public listar(): void {}
+    public listar(): void {
+        this.listagemGenero()
+    }
 
     private exibirRanking(titulo: string, contagem: { [nome: string]: number }): void {
         console.log(`\n ${titulo}`)
@@ -24,16 +26,17 @@ export default class ListagemClienteGenero extends Listagem {
 
         entradas.sort((a, b) => b[1] - a[1])
         entradas.forEach(([nome, quantidade], index) => {
-            console.log(`${index + 1}º, Nome: ${nome}`)
-            console.log(` Consumo: ${quantidade}\n`)
+            console.log(`${index + 1}º Nome: ${nome}`)
+            console.log(`Consumo: ${quantidade}\n`)
+            console.log(`--------------------------------------`);
         })
     }
 
     public listagemGenero(): void {
-        console.log(`\nLista de produtos e serviços mais consumidos por gênero`)
+        console.log(`\nLista de produtos e serviços mais consumidos por gênero\n`)
         console.log(`\nSelecione um genêro:`)
-        console.log('1 - Masculino\n')
-        console.log('2 - Feminino\n')
+        console.log('1 - Masculino')
+        console.log('2 - Feminino')
         console.log('0 - Sair\n')
 
         let opcaoGenero = this.entrada.receberTexto('Insira a opção escolhida: ')

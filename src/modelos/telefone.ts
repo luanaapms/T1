@@ -20,4 +20,8 @@ export default class Telefone {
     public set setNumero(numero: string) {
         this.numero = numero;
     }
+    
+    public toString(): string {
+        return `(${this.ddd}) ${this.numero}`
+    }
 }

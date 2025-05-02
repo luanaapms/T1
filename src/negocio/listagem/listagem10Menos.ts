@@ -38,6 +38,7 @@ export default class ListagemMenorQuantidade extends Listagem {
             console.log(`   Produtos consumidos: ${totalProdutos}`)
             console.log(`   Serviços consumidos: ${totalServicos}`)
             console.log(`   Total de consumo: ${totalConsumo}\n`)
+            console.log(`--------------------------------------`);
         })
     }
 }

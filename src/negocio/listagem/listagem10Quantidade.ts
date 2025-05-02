@@ -33,6 +33,7 @@ export default class ListagemMaiorQuantidade extends Listagem {
             console.log(`   Produtos consumidos: ${totalProdutos}`)
             console.log(`   Serviços consumidos: ${totalServicos}`)
             console.log(`   Total: ${totalConsumo}\n`)
+            console.log(`--------------------------------------`);
         })
     }
 }
