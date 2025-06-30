@@ -21,7 +21,7 @@ Você é um empreendedor que está iniciando sua empresa. Um dos primeiros clien
 1. Clone o repositório
     
     ```bash
-    git clone <https://github.com/luanaapms/ATVI-WB.git>
+    git clone <https://github.com/luanaapms/T1.git>
     
     ```
     
